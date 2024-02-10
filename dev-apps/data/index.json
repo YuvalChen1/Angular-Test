@@ -1,0 +1,12 @@
+[
+    {
+        "accountNumber": 123456,
+        "action": "withdrawal",
+        "amount": 3000
+    },
+    {
+        "accountNumber": 234567,
+        "action": "deposit",
+        "amount": 2000
+    }
+]

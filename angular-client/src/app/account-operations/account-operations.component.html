@@ -1,0 +1,20 @@
+<div class="account-operations">
+  <h2 class="title">Account Operations</h2>
+  <label for="accountNumberInput" class="form-label">Account Number: </label>
+  <input type="number" id="accountNumberInput" [(ngModel)]="accountNumber" class="form-input" />
+  <button (click)="searchOperations()" class="search-button">Search</button>
+
+  <ul class="operations-list">
+    <li *ngFor="let operation of operations" class="operation-item">
+      <strong class="operation-label">Account Number:</strong> {{ operation.accountNumber }}<br />
+      <strong class="operation-label">Action:</strong> {{ operation.action }}<br />
+      <strong class="operation-label">Amount:</strong> {{ operation.amount }}<br />
+      <strong class="operation-label">Time:</strong> {{ operation.timestamp }}<br />
+
+      <div *ngIf="operation.action === 'loan'" class="loan-details">
+        <strong class="operation-label">Interest:</strong> {{ operation.interest }}<br />
+        <strong class="operation-label">Payments:</strong> {{ operation.payments }}<br />
+      </div>
+    </li>
+  </ul>
+</div>

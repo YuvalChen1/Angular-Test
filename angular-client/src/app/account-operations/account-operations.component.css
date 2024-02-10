@@ -1,0 +1,49 @@
+.account-operations {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100px;
+}
+
+.search-button {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.operations-list {
+  list-style: none;
+  padding: 0;
+}
+
+.operation-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.operation-label {
+  font-weight: bold;
+}
+
+.loan-details {
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 10px 0;
+}
